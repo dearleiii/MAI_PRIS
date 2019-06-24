@@ -13,10 +13,10 @@ import UIKit
 
 class HistoryTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    class HistoryEntryCell: UITableViewCell {
-        @IBOutlet var DroneLocation: UIImageView!
+    //class HistoryEntryCell: UITableViewCell {
+      //  @IBOutlet var DroneLocation: UIImageView!
         
-    }
+    //}
     
     @IBOutlet var tableView: UITableView!
     
@@ -55,15 +55,16 @@ class HistoryTableViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Ask for a cell of the appropriate type
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: indexPath) as! HistoryEntryCell
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: IndexPath) as! HistoryEntryCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: indexPath)
         
         // fetch data from storage
-        let theHistory = historyEntries[indexPath.row]
+        // let theHistory = historyEntries[indexPath.row]
 
         // Configure the cell's contents with the row and section number
         // The basic cell stype gurantees a label view is present in textLabel
         // Content of the cell include: textLabel, detailTextLabel, imageView
-        // cell.textLabel!.text =  "Entry \(indexPath.row)   " +  historyEntries[indexPath.row] // historyEntries[IndexPath.row]
+        cell.textLabel!.text =  "Entry \(indexPath.row)   " +  historyEntries[indexPath.row] // historyEntries[IndexPath.row]
         // cell.detailTextLabel!.text = "Fill in most recent detection time;\n Current detection time; \n Detection location "
         // cell.informationText?.text = theHistory + " fill in sample detection date"
         // cell.droneLocationImage?.image = A dronelogo2

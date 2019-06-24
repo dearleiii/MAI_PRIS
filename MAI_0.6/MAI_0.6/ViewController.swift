@@ -33,5 +33,11 @@ class ViewController: UIViewController {
     @IBAction func dukeGardenEnterTapped(_ sender: Any) {
         print("Choose Dukar Garden Map")
     }
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PresentKokaMap" {
+            let destination = segue.destination  as? MapsViewController
+        }
+    }*/
 }
 

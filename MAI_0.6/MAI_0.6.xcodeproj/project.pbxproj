@@ -16,6 +16,7 @@
 		F925048A22BF50A2009223CA /* MAI_0_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925048922BF50A2009223CA /* MAI_0_6Tests.swift */; };
 		F925049522BF50A2009223CA /* MAI_0_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925049422BF50A2009223CA /* MAI_0_6UITests.swift */; };
 		F92504A322BF6F11009223CA /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92504A222BF6F11009223CA /* HistoryTableViewController.swift */; };
+		F9DD36AF22C1864E00C1B436 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F9DD36AE22C1864E00C1B436 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F925049422BF50A2009223CA /* MAI_0_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAI_0_6UITests.swift; sourceTree = "<group>"; };
 		F925049622BF50A2009223CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92504A222BF6F11009223CA /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		F9DD36AE22C1864E00C1B436 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		F925046822BF50A1009223CA = {
 			isa = PBXGroup;
 			children = (
+				F9DD36AE22C1864E00C1B436 /* README */,
 				F925047322BF50A1009223CA /* MAI_0.6 */,
 				F925048822BF50A2009223CA /* MAI_0.6Tests */,
 				F925049322BF50A2009223CA /* MAI_0.6UITests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DD36AF22C1864E00C1B436 /* README in Resources */,
 				F925047F22BF50A2009223CA /* LaunchScreen.storyboard in Resources */,
 				F925047C22BF50A2009223CA /* Assets.xcassets in Resources */,
 				F925047A22BF50A1009223CA /* Main.storyboard in Resources */,

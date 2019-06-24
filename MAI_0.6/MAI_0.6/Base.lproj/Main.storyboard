@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pDG-lH-9HE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-GF-N19" userLabel="Page">
+                                <rect key="frame" x="5" y="57.5" width="365" height="552"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="147" translatesAutoresizingMaskIntoConstraints="NO" id="wew-gV-dYJ" userLabel="Labels">
+                                        <rect key="frame" x="0.0" y="98.5" width="80" height="355.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q61-FO-wex">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Dan River">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="Georgia-BoldItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hba-12-tE6">
+                                                <rect key="frame" x="0.0" y="167.5" width="80" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Koka Booth">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="Georgia-BoldItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfo-eh-dWy">
+                                                <rect key="frame" x="0.0" y="335" width="80" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Duke Garden">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="Georgia-BoldItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="ltd-yq-fFV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-O0-2ud" userLabel="Image Buttons">
+                                        <rect key="frame" x="80" y="0.0" width="285" height="552"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gij-7G-jLd">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="4cl-ER-Grq"/>
+                                                    <constraint firstAttribute="height" constant="180" id="8nQ-B0-tF9"/>
+                                                </constraints>
+                                                <state key="normal" image="intro_pris">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Dan River">
+                                                            <attributes>
+                                                                <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="danriverEnterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUd-wX-Fia"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-4K-CUS">
+                                                <rect key="frame" x="0.0" y="186" width="285" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="CmA-dQ-rMF"/>
+                                                    <constraint firstAttribute="width" constant="300" id="rSX-Nc-iHr"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Dtf-5G-SXa"/>
+                                                <state key="normal" title="Koka Booth" image="intro_koka2"/>
+                                                <connections>
+                                                    <action selector="kokaboothEnterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZJ-Bu-mJc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXv-pb-mKh">
+                                                <rect key="frame" x="0.0" y="372" width="285" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="C7b-Yi-NXI"/>
+                                                    <constraint firstAttribute="height" constant="180" id="C9t-d8-4k7"/>
+                                                </constraints>
+                                                <state key="normal" title="Duke Garden" image="intro_dukeg1"/>
+                                                <connections>
+                                                    <action selector="dukeGardenEnterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9l-dA-nNb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WhB-GF-N19" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="3g9-M3-ta3"/>
+                            <constraint firstItem="WhB-GF-N19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4C8-4e-HvA"/>
+                            <constraint firstItem="WhB-GF-N19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ww-tQ-R2c"/>
+                            <constraint firstAttribute="trailing" secondItem="WhB-GF-N19" secondAttribute="trailing" constant="5" id="z3a-wM-7KY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="danriverEnter" destination="gij-7G-jLd" id="wJX-tu-Tai"/>
+                        <outlet property="dukegardenEnter" destination="hXv-pb-mKh" id="KuS-D1-V74"/>
+                        <outlet property="kokaboothEnter" destination="ljn-4K-CUS" id="9Js-mb-Hcz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="E3q-0b-CIY">
+            <objects>
+                <viewController id="pDG-lH-9HE" customClass="MapsViewController" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4V-Zl-slY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.29999999999999999" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="J3e-Bl-OKI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapsscroll_kokabooth" translatesAutoresizingMaskIntoConstraints="NO" id="faG-g2-IoS">
+                                        <rect key="frame" x="0.0" y="0.0" width="2193" height="992"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="faG-g2-IoS" firstAttribute="leading" secondItem="J3e-Bl-OKI" secondAttribute="leading" id="COF-vL-qRQ"/>
+                                    <constraint firstItem="faG-g2-IoS" firstAttribute="top" secondItem="J3e-Bl-OKI" secondAttribute="top" id="NO7-tC-SM4"/>
+                                    <constraint firstAttribute="trailing" secondItem="faG-g2-IoS" secondAttribute="trailing" id="Q2r-7T-F7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="faG-g2-IoS" secondAttribute="bottom" id="hzr-os-nqT"/>
+                                    <constraint firstAttribute="bottom" secondItem="faG-g2-IoS" secondAttribute="bottom" id="jcN-5K-mdd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="pDG-lH-9HE" id="WPL-Xw-o6c"/>
+                                    <outletCollection property="gestureRecognizers" destination="AaV-wF-Jcu" appends="YES" id="1XU-NE-VVg"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J3e-Bl-OKI" firstAttribute="top" secondItem="D4V-Zl-slY" secondAttribute="top" id="NgQ-EK-fS8"/>
+                            <constraint firstAttribute="trailing" secondItem="J3e-Bl-OKI" secondAttribute="trailing" id="jy9-Y4-pKU"/>
+                            <constraint firstAttribute="bottom" secondItem="J3e-Bl-OKI" secondAttribute="bottom" id="ouS-Db-DBd"/>
+                            <constraint firstItem="J3e-Bl-OKI" firstAttribute="leading" secondItem="D4V-Zl-slY" secondAttribute="leading" id="wpo-Y2-Woz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OHP-Ez-13S"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapKokabooth" destination="faG-g2-IoS" id="35d-uU-7kQ"/>
+                        <outlet property="scrollView" destination="J3e-Bl-OKI" id="BrG-n1-LfU"/>
+                        <outlet property="zoomTapGestureRecognizer" destination="AaV-wF-Jcu" id="UNU-Wi-gpd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCY-ZN-Yuw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AaV-wF-Jcu">
+                    <connections>
+                        <action selector="onTap:" destination="pDG-lH-9HE" id="7m3-sm-gHU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="783" y="-62"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="OH2-t3-IK8">
+            <objects>
+                <viewController id="qgr-R1-jKP" customClass="MapsViewController" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="srp-kP-gQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50R-X8-cNN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapscroll_Dukegarden" translatesAutoresizingMaskIntoConstraints="NO" id="5pL-Q9-3w6">
+                                        <rect key="frame" x="0.0" y="0.0" width="1598" height="980"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5pL-Q9-3w6" secondAttribute="trailing" id="Iu5-dr-iGd"/>
+                                    <constraint firstItem="5pL-Q9-3w6" firstAttribute="top" secondItem="50R-X8-cNN" secondAttribute="top" id="Zn9-Oe-12S"/>
+                                    <constraint firstAttribute="bottom" secondItem="5pL-Q9-3w6" secondAttribute="bottom" id="lA6-l7-Htv"/>
+                                    <constraint firstItem="5pL-Q9-3w6" firstAttribute="leading" secondItem="50R-X8-cNN" secondAttribute="leading" id="zwj-ae-Hwy"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="qgr-R1-jKP" id="yKK-f1-Jn4"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="50R-X8-cNN" firstAttribute="top" secondItem="srp-kP-gQ1" secondAttribute="top" id="8Zw-Vj-WPz"/>
+                            <constraint firstAttribute="bottom" secondItem="50R-X8-cNN" secondAttribute="bottom" id="QG4-8B-7KH"/>
+                            <constraint firstItem="50R-X8-cNN" firstAttribute="leading" secondItem="srp-kP-gQ1" secondAttribute="leading" id="YPr-iF-TQN"/>
+                            <constraint firstAttribute="trailing" secondItem="50R-X8-cNN" secondAttribute="trailing" id="mLo-oV-rjm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="87E-dA-In6"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapDukeGarden" destination="5pL-Q9-3w6" id="71d-dW-YqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTN-Im-BxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="632"/>
+        </scene>
+        <!--History Table View Controller-->
+        <scene sceneID="JiF-Mf-rZq">
+            <objects>
+                <viewController id="8Oi-pi-cEc" customClass="HistoryTableViewController" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r2a-XR-hTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0S6-Y6-2vR">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryEntry" rowHeight="170" id="gy7-Gw-dhb">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gy7-Gw-dhb" id="Ej6-nT-04w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Oi-pi-cEc" id="vTi-1X-3gg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="exM-FU-anV" firstAttribute="bottom" secondItem="0S6-Y6-2vR" secondAttribute="bottom" id="6pf-1l-MnG"/>
+                            <constraint firstItem="0S6-Y6-2vR" firstAttribute="leading" secondItem="exM-FU-anV" secondAttribute="leading" id="TLC-5Q-iS8"/>
+                            <constraint firstItem="exM-FU-anV" firstAttribute="trailing" secondItem="0S6-Y6-2vR" secondAttribute="trailing" id="ckF-Tn-ipf"/>
+                            <constraint firstItem="0S6-Y6-2vR" firstAttribute="top" secondItem="exM-FU-anV" secondAttribute="top" constant="40" id="g05-rp-fVI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="exM-FU-anV"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="0S6-Y6-2vR" id="aNr-Zc-ida"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cv-jE-Seg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="-62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro_dukeg1" width="780" height="500"/>
+        <image name="intro_koka2" width="1300" height="650"/>
+        <image name="intro_pris" width="480" height="270"/>
+        <image name="mapscroll_Dukegarden" width="1598" height="980"/>
+        <image name="mapsscroll_kokabooth" width="2193" height="992"/>
+    </resources>
+</document>

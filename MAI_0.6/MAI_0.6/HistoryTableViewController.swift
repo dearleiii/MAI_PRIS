@@ -8,80 +8,56 @@
 
 import UIKit
 
-// define a UITableViewCell subclass to access your cell’s views.
-// class HistoryEntryCell: UITableViewCell {}
-
-class HistoryTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HistoryTableViewController: UITableViewController {
     
-    //class HistoryEntryCell: UITableViewCell {
-      //  @IBOutlet var DroneLocation: UIImageView!
-        
-    //}
+    // @IBOutlet var tableView: UITableView!
     
-    @IBOutlet var tableView: UITableView!
-    
-    let historyEntries = [
-        "near",
-        "near",
-        "vnear",
-        "midrange",
-        "midrange",
-        "vnear",
-        "near",
-        "near",
-        "vnear",
-        "midrange",
-        "midrange",
-        "vnear",
-    ]
-    
-    // let images = [dronelogo1, dronelogo2, dronelogo3]
+    var historyEntryCell : [cellCustom] = [cellCustom]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        tableView.dataSource = self
-        tableView.delegate = self
+        loadHistoryArray()
+        print(historyEntryCell[3].text)
+        // tableView.register(UITableViewCell.self, forCellReuseIdentifier: "HistoryEntry")
+        tableView.register(HistoryCell.self, forCellReuseIdentifier: "HistoryEntry")
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(historyEntries[indexPath.row])
+    override func didReceiveMemoryWarning() {
+        print("memory warning ....\n")
+        super.didReceiveMemoryWarning()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return historyEntries.count
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(historyEntryCell[indexPath.row].cellNum)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Ask for a cell of the appropriate type
-        // let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: IndexPath) as! HistoryEntryCell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: indexPath)
-        
-        // fetch data from storage
-        // let theHistory = historyEntries[indexPath.row]
-
-        // Configure the cell's contents with the row and section number
-        // The basic cell stype gurantees a label view is present in textLabel
-        // Content of the cell include: textLabel, detailTextLabel, imageView
-        cell.textLabel!.text =  "Entry \(indexPath.row)   " +  historyEntries[indexPath.row] // historyEntries[IndexPath.row]
-        // cell.detailTextLabel!.text = "Fill in most recent detection time;\n Current detection time; \n Detection location "
-        // cell.informationText?.text = theHistory + " fill in sample detection date"
-        // cell.droneLocationImage?.image = A dronelogo2
-        // cell.tapViewLabel?.text = "Tap to view"
-        
-        
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return historyEntryCell.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryEntry", for: indexPath) as! HistoryCell
+        let currentLastItem = historyEntryCell[indexPath.row]
+        // cell.textLabel?.text = currentLastItem.text
+        cell.history = currentLastItem
         return cell
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
     }
-    */
+    
+    func loadHistoryArray() {
+        historyEntryCell.append(cellCustom(cellNum: 1, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        print("load the first cell infor good! \n cell text is \(historyEntryCell[1].text)\n")
+        historyEntryCell.append(cellCustom(cellNum: 2, text: "Testout the printing midrange", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        historyEntryCell.append(cellCustom(cellNum: 3, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        historyEntryCell.append(cellCustom(cellNum: 4, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        historyEntryCell.append(cellCustom(cellNum: 5, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        historyEntryCell.append(cellCustom(cellNum: 6, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+        historyEntryCell.append(cellCustom(cellNum: 7, text: "Testout the printing near ", location: #imageLiteral(resourceName: "dronelogo2"), tap: "Tap to view"))
+    }
 
 }

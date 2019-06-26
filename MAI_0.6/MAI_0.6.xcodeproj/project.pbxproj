@@ -16,6 +16,9 @@
 		F925048A22BF50A2009223CA /* MAI_0_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925048922BF50A2009223CA /* MAI_0_6Tests.swift */; };
 		F925049522BF50A2009223CA /* MAI_0_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925049422BF50A2009223CA /* MAI_0_6UITests.swift */; };
 		F92504A322BF6F11009223CA /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92504A222BF6F11009223CA /* HistoryTableViewController.swift */; };
+		F9B7701122C1E9D00019111F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7701022C1E9D00019111F /* extension.swift */; };
+		F9B7701322C1F06E0019111F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7701222C1F06E0019111F /* History.swift */; };
+		F9B7701522C1F1120019111F /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7701422C1F1120019111F /* HistoryCell.swift */; };
 		F9DD36AF22C1864E00C1B436 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F9DD36AE22C1864E00C1B436 /* README */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		F925049422BF50A2009223CA /* MAI_0_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAI_0_6UITests.swift; sourceTree = "<group>"; };
 		F925049622BF50A2009223CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92504A222BF6F11009223CA /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		F9B7701022C1E9D00019111F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		F9B7701222C1F06E0019111F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F9B7701422C1F1120019111F /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		F9DD36AE22C1864E00C1B436 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +112,9 @@
 			children = (
 				F925047422BF50A1009223CA /* AppDelegate.swift */,
 				F925047622BF50A1009223CA /* ViewController.swift */,
+				F9B7701022C1E9D00019111F /* extension.swift */,
+				F9B7701222C1F06E0019111F /* History.swift */,
+				F9B7701422C1F1120019111F /* HistoryCell.swift */,
 				F92504A222BF6F11009223CA /* HistoryTableViewController.swift */,
 				F913FC0B22C15B3100D545EB /* MapsViewController.swift */,
 				F925047822BF50A1009223CA /* Main.storyboard */,
@@ -266,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B7701322C1F06E0019111F /* History.swift in Sources */,
+				F9B7701522C1F1120019111F /* HistoryCell.swift in Sources */,
+				F9B7701122C1E9D00019111F /* extension.swift in Sources */,
 				F925047722BF50A1009223CA /* ViewController.swift in Sources */,
 				F925047522BF50A1009223CA /* AppDelegate.swift in Sources */,
 				F92504A322BF6F11009223CA /* HistoryTableViewController.swift in Sources */,

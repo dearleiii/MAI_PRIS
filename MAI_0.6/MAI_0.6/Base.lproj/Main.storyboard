@@ -196,27 +196,57 @@
         <!--History-->
         <scene sceneID="JiF-Mf-rZq">
             <objects>
-                <viewController id="8Oi-pi-cEc" customClass="HistoryTableViewController" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Oi-pi-cEc" customClass="History" customModule="MAI_0_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2a-XR-hTO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0S6-Y6-2vR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0S6-Y6-2vR">
                                 <rect key="frame" x="0.0" y="104" width="375" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryEntry" rowHeight="170" id="gy7-Gw-dhb">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="170"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryEntryCell" rowHeight="150" id="gy7-Gw-dhb" userLabel="HistoryEntryCell" customClass="HistoryEntryCell" customModule="MAI_0_6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gy7-Gw-dhb" id="Ej6-nT-04w">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g4L-9g-d6d">
+                                                    <rect key="frame" x="20" y="16" width="100" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="h8h-LD-lR5"/>
+                                                        <constraint firstAttribute="height" constant="75" id="jIm-TJ-McD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0iu-Iu-gjd">
+                                                    <rect key="frame" x="160" y="40" width="180" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="7Nu-AE-tks"/>
+                                                        <constraint firstAttribute="height" constant="70" id="SAv-R7-270"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g4L-9g-d6d" firstAttribute="leading" secondItem="Ej6-nT-04w" secondAttribute="leadingMargin" constant="5" id="0yB-TX-ad1"/>
+                                                <constraint firstItem="0iu-Iu-gjd" firstAttribute="leading" secondItem="g4L-9g-d6d" secondAttribute="trailing" constant="40" id="1fd-UR-7xJ"/>
+                                                <constraint firstItem="g4L-9g-d6d" firstAttribute="top" secondItem="Ej6-nT-04w" secondAttribute="topMargin" constant="5" id="5vh-xs-xOJ"/>
+                                                <constraint firstItem="0iu-Iu-gjd" firstAttribute="centerY" secondItem="Ej6-nT-04w" secondAttribute="centerY" id="DvL-xx-qor"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="historyImageView" destination="g4L-9g-d6d" id="KGc-Mx-1Nh"/>
+                                            <outlet property="historyInfoText" destination="0iu-Iu-gjd" id="JOK-JJ-tXs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="8Oi-pi-cEc" id="vTi-1X-3gg"/>
+                                    <outlet property="dataSource" destination="8Oi-pi-cEc" id="QI7-Q6-y4Z"/>
+                                    <outlet property="delegate" destination="8Oi-pi-cEc" id="Vs7-46-mHq"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -236,13 +266,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="0S6-Y6-2vR" id="aNr-Zc-ida"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cv-jE-Seg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="616"/>
+            <point key="canvasLocation" x="2080.8000000000002" y="615.74212893553226"/>
         </scene>
         <!--Settings-->
         <scene sceneID="1lm-fg-kTx">
@@ -291,6 +318,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="b1g-N3-JIl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YiV-QI-FPX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -354,7 +382,6 @@
         <image name="mapsscroll_kokabooth" width="2193" height="992"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FS9-jJ-Fur"/>
-        <segue reference="Xvk-H2-h63"/>
+        <segue reference="BLn-0p-msn"/>
     </inferredMetricsTieBreakers>
 </document>

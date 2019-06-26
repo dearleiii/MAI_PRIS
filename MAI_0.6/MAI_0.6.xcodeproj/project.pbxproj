@@ -15,7 +15,9 @@
 		F925047F22BF50A2009223CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F925047D22BF50A2009223CA /* LaunchScreen.storyboard */; };
 		F925048A22BF50A2009223CA /* MAI_0_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925048922BF50A2009223CA /* MAI_0_6Tests.swift */; };
 		F925049522BF50A2009223CA /* MAI_0_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925049422BF50A2009223CA /* MAI_0_6UITests.swift */; };
-		F92504A322BF6F11009223CA /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92504A222BF6F11009223CA /* HistoryTableViewController.swift */; };
+		F92504A322BF6F11009223CA /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92504A222BF6F11009223CA /* History.swift */; };
+		F94B982022C3371800D4C26F /* HistoryEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B981F22C3371800D4C26F /* HistoryEntryCell.swift */; };
+		F94B982222C338F500D4C26F /* HistoryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B982122C338F500D4C26F /* HistoryClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,9 @@
 		F925049022BF50A2009223CA /* MAI_0.6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAI_0.6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F925049422BF50A2009223CA /* MAI_0_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAI_0_6UITests.swift; sourceTree = "<group>"; };
 		F925049622BF50A2009223CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F92504A222BF6F11009223CA /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		F92504A222BF6F11009223CA /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F94B981F22C3371800D4C26F /* HistoryEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntryCell.swift; sourceTree = "<group>"; };
+		F94B982122C338F500D4C26F /* HistoryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,9 @@
 			children = (
 				F925047422BF50A1009223CA /* AppDelegate.swift */,
 				F925047622BF50A1009223CA /* ViewController.swift */,
-				F92504A222BF6F11009223CA /* HistoryTableViewController.swift */,
+				F92504A222BF6F11009223CA /* History.swift */,
+				F94B981F22C3371800D4C26F /* HistoryEntryCell.swift */,
+				F94B982122C338F500D4C26F /* HistoryClass.swift */,
 				F913FC0B22C15B3100D545EB /* MapsViewController.swift */,
 				F925047822BF50A1009223CA /* Main.storyboard */,
 				F925047B22BF50A2009223CA /* Assets.xcassets */,
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94B982222C338F500D4C26F /* HistoryClass.swift in Sources */,
 				F925047722BF50A1009223CA /* ViewController.swift in Sources */,
+				F94B982022C3371800D4C26F /* HistoryEntryCell.swift in Sources */,
 				F925047522BF50A1009223CA /* AppDelegate.swift in Sources */,
-				F92504A322BF6F11009223CA /* HistoryTableViewController.swift in Sources */,
+				F92504A322BF6F11009223CA /* History.swift in Sources */,
 				F913FC0C22C15B3100D545EB /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

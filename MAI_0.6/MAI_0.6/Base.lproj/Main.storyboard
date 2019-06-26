@@ -220,21 +220,31 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0iu-Iu-gjd">
-                                                    <rect key="frame" x="160" y="40" width="180" height="70"/>
+                                                    <rect key="frame" x="140" y="21" width="200" height="107.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="180" id="7Nu-AE-tks"/>
-                                                        <constraint firstAttribute="height" constant="70" id="SAv-R7-270"/>
+                                                        <constraint firstAttribute="width" constant="200" id="7Nu-AE-tks"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40i-nj-YWp">
+                                                    <rect key="frame" x="25" y="101" width="96" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="15z-4m-X6a"/>
+                                                        <constraint firstAttribute="width" constant="96" id="u7a-Wd-DYh"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Tap to View"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="g4L-9g-d6d" firstAttribute="leading" secondItem="Ej6-nT-04w" secondAttribute="leadingMargin" constant="5" id="0yB-TX-ad1"/>
-                                                <constraint firstItem="0iu-Iu-gjd" firstAttribute="leading" secondItem="g4L-9g-d6d" secondAttribute="trailing" constant="40" id="1fd-UR-7xJ"/>
                                                 <constraint firstItem="g4L-9g-d6d" firstAttribute="top" secondItem="Ej6-nT-04w" secondAttribute="topMargin" constant="5" id="5vh-xs-xOJ"/>
                                                 <constraint firstItem="0iu-Iu-gjd" firstAttribute="centerY" secondItem="Ej6-nT-04w" secondAttribute="centerY" id="DvL-xx-qor"/>
+                                                <constraint firstItem="40i-nj-YWp" firstAttribute="leading" secondItem="Ej6-nT-04w" secondAttribute="leadingMargin" constant="10" id="HAh-6m-mga"/>
+                                                <constraint firstItem="40i-nj-YWp" firstAttribute="top" secondItem="g4L-9g-d6d" secondAttribute="bottom" constant="10" id="MXC-Hc-wPa"/>
+                                                <constraint firstItem="0iu-Iu-gjd" firstAttribute="top" secondItem="Ej6-nT-04w" secondAttribute="topMargin" constant="10" id="Y8m-N5-bU5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0iu-Iu-gjd" secondAttribute="trailing" constant="20" id="eU3-jV-L4e"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
